@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,700;1,300&display=swap');
+
+
+$lightGreen : #b9e7e7;
+
+body {
+    background: linear-gradient(to right, white, rgb(196, 196, 150));
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    
+
+    .container {
+        width: 1024px;
+        box-shadow: 0 0 12px -9px rgba(66, 68, 90, 1);
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+      
+.slogan-container{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-left:20px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: center;
+            color: black;
+            text-align: right;
+            font-size: 1rem;
+            background-image: url('./images/header-bg.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+         
+            
+            
+            height: 20%;
+            
+           
+            &:hover{
+                font-size: larger;
+                transition: font-size 2s ease;
+            }
+
+            
+        }
+
+}     

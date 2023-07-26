@@ -1,0 +1,18 @@
+.container-post{
+    display:flex;
+    gap: 5%;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+    margin-bottom: 50px;
+}
+.image{
+    height: 150px;
+}
+
+.info a{
+    font-size: 1rem;
+}
+.map {
+    height:400px;
+}
