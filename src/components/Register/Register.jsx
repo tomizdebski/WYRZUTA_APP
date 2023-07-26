@@ -40,7 +40,7 @@ const SignupSchema = Yup.object().shape({
                     validationSchema={SignupSchema}
                     onSubmit={async (values) => {
                     console.log(values);
-                    const response = await fetch('https://wyrzuta.onrender.com/register', {
+                    const response = await fetch(env.URL_API + '/register', {
                     method: 'POST',
                     body: JSON.stringify(values),
                     headers: {'Content-Type':'application/json'},
