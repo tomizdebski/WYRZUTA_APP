@@ -1,5 +1,5 @@
 
-import './App.scss';
+//import './App.scss';
 import {Route, Routes} from "react-router-dom";
 import {UserContextProvider} from "./UserContext";
 import Layout from './components/Layout';

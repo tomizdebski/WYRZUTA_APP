@@ -3,8 +3,9 @@ import Footer from "./Footer/Footer";
 import {Outlet} from "react-router-dom";
 
 export default function Layout() {
+  
   return (
-    <main>
+    <main className="flex flex-col align-center">
       <Navbar />
       <Outlet />
       <Footer />

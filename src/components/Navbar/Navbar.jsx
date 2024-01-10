@@ -1,11 +1,9 @@
 import React from 'react'
 import Logo from "../../images/logo.png"
 import { Link } from 'react-router-dom'
-import './Navbar.scss'
+//import './Navbar.scss'
 import {useContext, useEffect, useState} from "react";
 import { UserContext } from '../../UserContext';
-import Fab from '@mui/material/Fab';
-import AnnouncementIcon from '@mui/icons-material/Announcement';
 
 
 
@@ -27,12 +25,12 @@ function Navbar() {
 
   return (
     <div className='navbar'>
-      <div className="container">
-        <Link className="logo" to="/" >
+      <div className="flex items-center justify-around">
+        <Link className="flex w-20" to="/" >
           <img src={Logo} alt="logo" />
           <h1>wyrzuta.pl</h1>
         </Link>
-        <div className="links">
+        <div className="flex gap-3">
           <Link className='link' to="/">
             <h6>Start</h6>
           </Link>
