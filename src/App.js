@@ -1,5 +1,5 @@
 
-//import './App.scss';
+
 import {Route, Routes} from "react-router-dom";
 import {UserContextProvider} from "./UserContext";
 import Layout from './components/Layout';
@@ -22,8 +22,8 @@ import { GoogleApiWrapper } from 'google-maps-react';
 function App() {
   return (
 
-    <div className="app">
-      <div className="container">
+    <div className="flex items-center w-full">
+      <div className="flex items-center w-full">
         <UserContextProvider>
           <Routes>
             <Route path="/" element={<Layout />}>
