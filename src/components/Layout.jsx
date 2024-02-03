@@ -5,7 +5,7 @@ import {Outlet} from "react-router-dom";
 export default function Layout() {
   
   return (
-    <main className="flex flex-col align-center ">
+    <main className="mx-auto">
       <Navbar />
       <Outlet />
       <Footer />

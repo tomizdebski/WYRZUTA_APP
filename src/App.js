@@ -1,5 +1,4 @@
 
-
 import {Route, Routes} from "react-router-dom";
 import {UserContextProvider} from "./UserContext";
 import Layout from './components/Layout';
@@ -22,8 +21,8 @@ import { GoogleApiWrapper } from 'google-maps-react';
 function App() {
   return (
 
-    <div className="flex items-center ">
-      <div className="flex items-center ">
+    
+      <div className="container">
         <UserContextProvider>
           <Routes>
             <Route path="/" element={<Layout />}>
@@ -42,7 +41,7 @@ function App() {
           </Routes>
         </UserContextProvider>
       </div>
-    </div>
+   
   );
 }
 

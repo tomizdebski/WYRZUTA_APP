@@ -19,9 +19,9 @@ function Navbar() {
   const username = userInfo?.username;
 
   return (
-    <div className="flex w-[1440px] h-[2255px] relative bg-white">
+  <div className="flex w-[1500px] h-[701px] relative bg-white ">
       <img
-        className="w-[1440px] h-[701px] left-[1px] top-0 absolute"
+        className="w-[1500px] h-[701px] left-[0px] top-0 absolute "
         src="Hero.png"
       />
       <div className="w-[1202px] h-[569px] left-[120px] top-0 absolute flex-col justify-between items-center inline-flex">
