@@ -50,13 +50,13 @@ function Navbar() {
             </div>
           </div>
           <div className="justify-start items-start flex">
-            <div className="w-40 h-[61.76px] p-2 justify-center items-center gap-2 flex">
-              <div className="text-white text-xl font-extrabold font-oswald">
+            <button className="w-40 h-[61.76px] p-2 justify-center items-center gap-2 flex text-white text-xl font-extrabold font-oswald hover:bg-green-400 hover:opacity-60">
+              
                 Login
-              </div>
-            </div>
-            <div className="w-40 h-[61.76px] p-2 bg-green-400 justify-center items-center gap-2 flex">
-              <div className="text-black text-xl font-extrabold font-oswald">
+              
+            </button>
+            <div className="w-40 h-[61.76px] p-2 bg-green-400 justify-center items-center gap-2 flex hover:opacity-60">
+              <div className="text-white text-xl font-extrabold font-oswald">
                 Register
               </div>
             </div>
@@ -64,24 +64,24 @@ function Navbar() {
         </div>
         <div className="self-stretch h-[376px] flex-col justify-between items-center flex">
           <div className="w-[1198px] h-[266px] text-center">
-            <span className="text-white text-[80px] font-bold font-oswald uppercase leading-[112px] tracking-widest">
+            <span className="text-white text-[80px] font-bold font-oswald uppercase leading-[112px]">
               nie wyrzucaj{" "}
             </span>
-            <span className="text-green-400 text-[80px] font-bold font-oswald uppercase leading-[112px] tracking-widest">
+            <span className="text-green-400 text-[80px] font-bold font-oswald uppercase leading-[112px] ">
               oddaj
             </span>
-            <span className="text-white text-[80px] font-bold font-oswald uppercase leading-[112px] tracking-widest">
+            <span className="text-white text-[80px] font-bold font-oswald uppercase leading-[112px] ">
               {" "}
               <br />
             </span>
             
-            <span className="text-green-400 text-[80px] font-bold font-oswald uppercase leading-[112px] tracking-widest">
+            <span className="text-green-400 text-[80px] font-bold font-oswald uppercase leading-[112px] ">
               {" "}
               niechciane rzeczy{" "}
             </span>
           </div>
           <div className="w-60 h-[60px] p-2 bg-green-400 justify-center items-center gap-2 inline-flex">
-            <div className="text-black text-xl font-bold font-oswald">
+            <div className="text-white text-xl font-bold font-oswald">
               Więcej
             </div>
           </div>

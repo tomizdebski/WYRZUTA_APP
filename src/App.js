@@ -22,8 +22,8 @@ import { GoogleApiWrapper } from 'google-maps-react';
 function App() {
   return (
 
-    <div className="flex items-center w-full">
-      <div className="flex items-center w-full">
+    <div className="flex items-center ">
+      <div className="flex items-center ">
         <UserContextProvider>
           <Routes>
             <Route path="/" element={<Layout />}>
