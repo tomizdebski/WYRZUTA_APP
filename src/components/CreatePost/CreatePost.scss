@@ -11,14 +11,14 @@
     &__item {
         padding: 10px;
         border: none;
-        border-radius: 5px; 
+        border-radius: 1px; 
     }
 
     input[type=file]::file-selector-button {
         padding:10px;
         align-self: center;
         background-color: #b9e7e7;
-        border-radius: 5px;
+        border-radius: 1px;
         border: none;
         &:hover {
             color: teal;
@@ -36,7 +36,7 @@
         width: 50%;
         align-self: center;
         background-color: #b9e7e7;
-        border-radius: 5px;
+        border-radius: 1px;
         border: none;
         &:hover {
             color: teal;

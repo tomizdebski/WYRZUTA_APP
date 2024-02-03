@@ -26,8 +26,9 @@ const SignupSchema = Yup.object().shape({
     }
 
     return (
-                <div className="register">
-                <h1  >Rejestracja</h1>
+                <div className="w-[100%] bg-[#130F0D]">
+                  <div className="register">
+                <h1 className="text-xl font-bold font-oswald text-white" >Rejestracja</h1>
                 <Formik
                     initialValues={{
                     username: '',
@@ -89,6 +90,8 @@ const SignupSchema = Yup.object().shape({
                     )}
                 </Formik>
                 </div>
+                </div>
+                
             );
     }
 

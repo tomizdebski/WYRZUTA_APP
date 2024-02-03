@@ -48,7 +48,10 @@ export default function CreatePost() {
 
   return (
     
-    <form className="form-add" onSubmit={createNewPost}>
+    <>
+    <h1 className="text-xl font-bold font-oswald text-white bg-[#130F0D] pt-20" >Dodaj ogłoszenie</h1>
+    <form className="form-add bg-[#130F0D] p-20" onSubmit={createNewPost}>
+      
       <input className="form-add__item" type="title"
              placeholder={'Tytuł'}
              value={title}
@@ -65,5 +68,7 @@ export default function CreatePost() {
       {error ? (<div style={{color: 'red'}} className="login__label">Pola muszą być wypełnione</div>) : null}
       <button className="form-add__item"style={{marginTop:'5px'}}>Dodaj</button>
     </form>
+    </>
+    
   );
 }

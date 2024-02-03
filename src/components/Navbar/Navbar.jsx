@@ -19,40 +19,79 @@ function Navbar() {
   const username = userInfo?.username;
 
   return (
-  <div className="flex w-[1500px] h-[701px] relative bg-white ">
+    <div className="flex w-[1500px] h-[701px] relative bg-white ">
       <img
         className="w-[1500px] h-[701px] left-[0px] top-0 absolute "
         src="Hero.png"
       />
       <div className="w-[1202px] h-[569px] left-[120px] top-0 absolute flex-col justify-between items-center inline-flex">
         <div className="self-stretch justify-between items-center inline-flex">
-          <div className="p-2.5 justify-center items-center flex">
+          <Link className="p-2.5 justify-center items-center flex " to="/">
             <img className=" w-[50px] h-[50px] left-[1px] " src="logo.svg" />
             <div className="text-stone-50 text-4xl font-bold font-oswald">
               Wyrzuta
             </div>
-          </div>
+          </Link>
           <div className="justify-start items-center gap-[33px] flex">
-            <div className="text-white text-xl font-extrabold font-oswald">
+            <Link
+              className="text-white text-xl font-extrabold font-oswald"
+              to="/"
+            >
               Start
-            </div>
-            <div className="text-white text-xl font-extrabold font-oswald">
+            </Link>
+            <Link
+              className="text-white text-xl font-extrabold font-oswald"
+              to="/how-to"
+            >
               O co chodzi
-            </div>
-            <div className="text-white text-xl font-extrabold font-oswald">
+            </Link>
+            <Link
+              className="text-white text-xl font-extrabold font-oswald"
+              to="/info"
+            >
               O nas
-            </div>
-            <div className="text-white text-xl font-extrabold font-oswald">
+            </Link>
+            <Link
+              className="text-white text-xl font-extrabold font-oswald"
+              to="/contact"
+            >
               Kontakt
-            </div>
+            </Link>
           </div>
           <div className="justify-start items-start flex">
-            <button className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black">
-              Login
-            </button>
-            <button className="py-[12px] px-[24px] bg-green-400 justify-center items-center gap-2 flex hover:opacity-60 text-white text-xl font-bold font-oswald hover:text-black">
-              Register
-            </button>
+            {username && (
+              <>
+                <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black" to="/my-orders">
+                  Koszyk
+                </Link>
+              </>
+            )}
+
+            {username && (
+              <>
+                <span>
+                  <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black" to="/" onClick={logout}>
+                    Wyloguj ({username})
+                  </Link>
+                </span>
+                <span className="give">
+                  <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black" to="/give">
+                    Oddaj
+                  </Link>
+                </span>
+              </>
+            )}
+
+            {!username && (
+              <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black " to="/login">
+                Login
+              </Link>
+            )}
+            {!username && (
+              <Link className="py-[12px] px-[24px] bg-green-400 justify-center items-center gap-2 flex hover:opacity-60 text-white text-xl font-bold font-oswald hover:text-black" to="/register">
+                Register
+              </Link>
+            )}
           </div>
         </div>
         <div className="self-stretch h-[376px] flex-col justify-between items-center flex">
@@ -73,11 +112,9 @@ function Navbar() {
               niechciane rzeczy{" "}
             </span>
           </div>
-          <button className="py-[12px] px-[24px] bg-green-400 justify-center items-center gap-2 inline-flex text-white text-xl font-bold font-oswald  hover:opacity-60 hover:text-black">
-            
-              Więcej
-            
-          </button>
+          <Link className="py-[12px] px-[24px] bg-green-400 justify-center items-center gap-2 inline-flex text-white text-xl font-bold font-oswald  hover:opacity-60 hover:text-black">
+            Więcej
+          </Link>
         </div>
       </div>
     </div>
