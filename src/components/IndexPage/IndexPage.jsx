@@ -18,16 +18,10 @@ export default function IndexPage() {
 
   return (
     <>
-        <div className="slogan-container">
-        <div className="slogan--item">
-          <h1>
-            Nie wyrzucaj oddaj!<br />
-            Oddaj niechciane rzeczy w zaufane ręce
-          </h1>
-        </div>
         
-      </div>
-      <div className="container-post">
+        
+     
+      <div className="container-post bg-[#130F0D] py-20">
          {posts.length > 0 && posts.map(post => (
         !post.buyer && <Post key={post._id} {...post} />
         ))}

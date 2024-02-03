@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center justify-between min-h-[300px] gap-4 bg-black p-10 ">
+    <div className="flex flex-col items-center justify-between min-h-[300px] gap-4 bg-[#130F0D] p-10 ">
       <div className="flex xs:flex-col lg:flex-row  xs:items-center  gap-4 lg:items-start justify-between  relative w-[80%]">
         <div className="flex gap-2 items-center">
           <img className="w-[50px] h-[50px] " src="logo.svg" />
