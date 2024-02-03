@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../images/logo.png";
+
 import { Link } from "react-router-dom";
 //import './Navbar.scss'
 import { useContext, useEffect, useState } from "react";
@@ -27,10 +27,7 @@ function Navbar() {
       <div className="w-[1202px] h-[569px] left-[120px] top-0 absolute flex-col justify-between items-center inline-flex">
         <div className="self-stretch justify-between items-center inline-flex">
           <div className="p-2.5 justify-center items-center flex">
-            <img
-              className=" w-[50px] h-[50px] left-[1px] "
-              src="Logo.svg"
-            />
+            <img className=" w-[50px] h-[50px] left-[1px] " src="logo.svg" />
             <div className="text-stone-50 text-4xl font-bold font-oswald">
               Wyrzuta
             </div>
@@ -50,16 +47,12 @@ function Navbar() {
             </div>
           </div>
           <div className="justify-start items-start flex">
-            <button className="w-40 h-[61.76px] p-2 justify-center items-center gap-2 flex text-white text-xl font-extrabold font-oswald hover:bg-green-400 hover:opacity-60">
-              
-                Login
-              
+            <button className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black">
+              Login
             </button>
-            <div className="w-40 h-[61.76px] p-2 bg-green-400 justify-center items-center gap-2 flex hover:opacity-60">
-              <div className="text-white text-xl font-extrabold font-oswald">
-                Register
-              </div>
-            </div>
+            <button className="py-[12px] px-[24px] bg-green-400 justify-center items-center gap-2 flex hover:opacity-60 text-white text-xl font-bold font-oswald hover:text-black">
+              Register
+            </button>
           </div>
         </div>
         <div className="self-stretch h-[376px] flex-col justify-between items-center flex">
@@ -74,17 +67,17 @@ function Navbar() {
               {" "}
               <br />
             </span>
-            
+
             <span className="text-green-400 text-[80px] font-bold font-oswald uppercase leading-[112px] ">
               {" "}
               niechciane rzeczy{" "}
             </span>
           </div>
-          <div className="w-60 h-[60px] p-2 bg-green-400 justify-center items-center gap-2 inline-flex">
-            <div className="text-white text-xl font-bold font-oswald">
+          <button className="py-[12px] px-[24px] bg-green-400 justify-center items-center gap-2 inline-flex text-white text-xl font-bold font-oswald  hover:opacity-60 hover:text-black">
+            
               Więcej
-            </div>
-          </div>
+            
+          </button>
         </div>
       </div>
     </div>
