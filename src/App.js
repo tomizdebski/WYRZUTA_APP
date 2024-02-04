@@ -22,7 +22,7 @@ function App() {
   return (
 
     
-      <div className="flex w-screen bg-black">
+      <div className="flex w-[100%] bg-black">
         <UserContextProvider>
           <Routes>
             <Route path="/" element={<Layout />}>

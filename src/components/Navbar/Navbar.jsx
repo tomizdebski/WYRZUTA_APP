@@ -96,19 +96,19 @@ function Navbar() {
           </div>
         </div>
         <div className="self-stretch h-[376px] flex-col justify-between items-center flex">
-          <div className="w-[1198px] h-[266px] text-center">
-            <span className="text-white text-[50px] lg:text-[80px] font-bold font-oswald uppercase leading-[112px]">
+          <div className="text-center">
+            <span className="text-white text-[40px] lg:text-[80px] font-bold font-oswald uppercase ">
               nie wyrzucaj{" "}
             </span>
-            <span className="text-green-400 text-[50px] lg:text-[80px] font-bold font-oswald uppercase leading-[112px] ">
+            <span className="text-green-400 text-[40px] lg:text-[80px] font-bold font-oswald uppercase ">
               oddaj
             </span>
-            <span className="text-white text-[50px] lg:text-[80px] font-bold font-oswald uppercase leading-[112px] ">
+            <span className="text-white text-[40px] lg:text-[80px] font-bold font-oswald uppercase ">
               {" "}
               <br />
             </span>
 
-            <span className="text-green-400 text-[50px] lg:text-[80px] font-bold font-oswald uppercase leading-[112px] ">
+            <span className="text-green-400 text-[40px] lg:text-[80px] font-bold font-oswald uppercase  ">
               {" "}
               niechciane rzeczy{" "}
             </span>
