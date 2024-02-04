@@ -26,7 +26,7 @@ function Navbar() {
       />
       <div className="w-full absolute top-0 left-0 flex items center ">
       <div className="w-full flex-col justify-between items-center inline-flex">
-        <div className="self-stretch justify-between items-center inline-flex">
+        <div className="self-stretch justify-between items-center inline-flex px-2">
           <Link className="p-2.5 justify-center items-center flex " to="/" >
             <img className=" w-[50px] h-[50px] left-[1px] " src="logo.svg" />
             <div className="text-stone-50 text-4xl font-bold font-oswald">
