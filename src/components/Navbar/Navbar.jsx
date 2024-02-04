@@ -35,38 +35,39 @@ function Navbar() {
           </Link>
           <div className="hidden justify-start items-center gap-[20px] lg:flex">
             <Link
-              className="text-white text-xl font-extrabold font-oswald"
+              className="text-white text-xl font-bold font-oswald hover:border-b-4 hover:border-green-400"
               to="/"
             >
               Start
             </Link>
             <Link
-              className="text-white text-xl font-extrabold font-oswald"
+              className="text-white text-xl font-bold font-oswald hover:border-b-4 hover:border-green-400"
               to="/how-to"
             >
               O co chodzi
             </Link>
             <Link
-              className="text-white text-xl font-extrabold font-oswald"
+              className="text-white text-xl font-bold font-oswald hover:border-b-4 hover:border-green-400"
               to="/info"
             >
               O nas
             </Link>
             <Link
-              className="text-white text-xl font-extrabold font-oswald"
+              className="text-white text-xl font-bold font-oswald hover:border-b-4 hover:border-green-400"
               to="/contact"
             >
               Kontakt
             </Link>
-          </div>
-          <div className="justify-start items-start flex">
             {username && (
               <>
-                <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black hover:border hover:border-green-400" to="/my-orders">
+                <Link className="text-white text-xl font-bold font-oswald hover:border-b-4 hover:border-green-400">
                   Koszyk
                 </Link>
               </>
             )}
+          </div>
+          <div className="justify-start items-start flex">
+            
 
             {username && (
               <>
@@ -95,25 +96,26 @@ function Navbar() {
             )}
           </div>
         </div>
-        <div className="self-stretch h-[376px] flex-col justify-end gap-3 items-center flex">
-          <div className="text-center">
-            <span className="text-white text-[40px] lg:text-[80px] font-bold font-oswald uppercase ">
-              nie wyrzucaj{" "}
+        <div className=" h-[376px] flex-col justify-end gap-3 items-left flex">
+          <div className="md:text-left text-center">
+            <span className="text-white text-[40px] lg:text-[60px] font-extrabold font-oswald  ">
+              Nie wyrzucaj{" "}
             </span>
-            <span className="text-green-400 text-[40px] lg:text-[80px] font-bold font-oswald uppercase ">
+            <span className="text-green-400 text-[40px] lg:text-[60px] font-extrabold font-oswald ">
               oddaj
             </span>
-            <span className="text-white text-[40px] lg:text-[80px] font-bold font-oswald uppercase ">
+            <span className="text-white text-[40px] lg:text-[60px] font-extrabold font-oswald uppercase ">
               {" "}
               <br />
             </span>
 
-            <span className="text-green-400 text-[40px] lg:text-[80px] font-bold font-oswald uppercase  ">
+            <span className="text-green-400 text-[40px] lg:text-[60px] font-extrabold font-oswald  ">
               {" "}
               niechciane rzeczy{" "}
             </span>
+            
           </div>
-          <Link className="py-[12px] px-[24px] bg-green-400 justify-center items-center gap-2 inline-flex text-white text-xl font-bold font-oswald  hover:opacity-60 hover:text-black">
+          <Link className="py-[12px] px-[24px] bg-green-400  w-[120px] justify-center items-center  inline-flex text-white text-xl font-bold font-oswald  hover:opacity-60 hover:text-black">
             Więcej
           </Link>
         </div>

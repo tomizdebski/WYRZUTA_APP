@@ -9,6 +9,7 @@
     border: 1px solid #5DF17E;
     margin-bottom: 40px;
     margin-top:40px;
+    border-radius: 5px;
     
 
     .texts{
@@ -50,7 +51,8 @@
 }
 .image img{
     width:100%;
-    height: 110%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
     
     
 }
