@@ -105,12 +105,12 @@ function Navbar() {
               oddaj
             </span>
             <span className="text-white text-[40px] lg:text-[60px] font-extrabold font-oswald uppercase ">
-              {" "}
+              
               <br />
             </span>
 
-            <span className="text-green-400 text-[40px] lg:text-[60px] font-extrabold font-oswald  ">
-              {" "}
+            <span className="text-white text-[40px] lg:text-[60px] font-extrabold font-oswald  ">
+              
               niechciane rzeczy{" "}
             </span>
             
