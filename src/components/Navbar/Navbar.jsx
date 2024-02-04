@@ -33,7 +33,7 @@ function Navbar() {
               Wyrzuta
             </div>
           </Link>
-          <div className="hidden justify-start items-center gap-[33px] lg:flex">
+          <div className="hidden justify-start items-center gap-[20px] lg:flex">
             <Link
               className="text-white text-xl font-extrabold font-oswald"
               to="/"
@@ -62,7 +62,7 @@ function Navbar() {
           <div className="justify-start items-start flex">
             {username && (
               <>
-                <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black" to="/my-orders">
+                <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black hover:border hover:border-green-400" to="/my-orders">
                   Koszyk
                 </Link>
               </>
@@ -71,12 +71,12 @@ function Navbar() {
             {username && (
               <>
                 <span>
-                  <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black" to="/" onClick={logout}>
+                  <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald   hover:bg-green-400 hover:border hover:border-green-400 hover:opacity-60 hover:text-black" to="/" onClick={logout}>
                     Wyloguj ({username})
                   </Link>
                 </span>
                 <span className="give">
-                  <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black" to="/give">
+                  <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex border  border-green-400 text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black" to="/give">
                     Oddaj
                   </Link>
                 </span>
@@ -84,18 +84,18 @@ function Navbar() {
             )}
 
             {!username && (
-              <Link className="py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald hover:bg-green-400 hover:opacity-60 hover:text-black " to="/login">
+              <Link className="mx-2 py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald border border-green-400 hover:bg-green-400 hover:opacity-60 hover:text-black " to="/login">
                 Login
               </Link>
             )}
             {!username && (
-              <Link className="py-[12px] px-[24px] bg-green-400 justify-center items-center gap-2 flex hover:opacity-60 text-white text-xl font-bold font-oswald hover:text-black" to="/register">
+              <Link className="py-[12px] px-[24px] bg-green-400 border border-green-400 justify-center items-center gap-2 flex hover:opacity-60 text-white text-xl font-bold font-oswald hover:text-black" to="/register">
                 Register
               </Link>
             )}
           </div>
         </div>
-        <div className="self-stretch h-[376px] flex-col justify-between items-center flex">
+        <div className="self-stretch h-[376px] flex-col justify-end gap-3 items-center flex">
           <div className="text-center">
             <span className="text-white text-[40px] lg:text-[80px] font-bold font-oswald uppercase ">
               nie wyrzucaj{" "}
