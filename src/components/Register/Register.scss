@@ -10,8 +10,8 @@
 
     &__item {
         padding: 10px;
-        border-radius: 1px;
-        border: none;
+        
+        border:solid #5df17e;
         text-align: center;
         width: 100%;
         margin-bottom: 10px;
@@ -23,13 +23,14 @@
 
     button{
         width: 100%;
-        align-self: center;
-        background-color: #b9e7e7;
-        border-radius: 1px;
+        
+        background-color: #5df17e;
+        
+        border: none;
         &:hover {
-            color: teal;
+            color: #5df17e;
             background-color: white;
-            border: 1px solid teal;
+            border: 2px solid #5df17e;
         }
     }
 }

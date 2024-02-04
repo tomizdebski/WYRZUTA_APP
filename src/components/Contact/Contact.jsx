@@ -48,8 +48,8 @@ export default function Contact(){
     
     return(
          
-                <div  className="bg-[#130F0D]">
-                <h1>Kontakt</h1>
+                <div  className="bg-white ">
+                <h1 className="text-xl font-bold font-oswald text-black">Kontakt</h1>
                 <Formik
                     initialValues={{
                     name: '',

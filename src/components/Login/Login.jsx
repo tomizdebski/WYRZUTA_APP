@@ -27,9 +27,9 @@ export default function Login() {
   }
 
   return (
-    <div className="flex  bg-[#130F0D]">
-      <div className="login ">
-        <h1 className="text-xl font-bold font-oswald text-white">Login</h1>
+    <div className="flex  bg-white">
+      <div className="login flex gap-6">
+        <h1 className="text-xl font-bold font-oswald text-black">Login</h1>
         <Formik
           initialValues={{
             username: "",
