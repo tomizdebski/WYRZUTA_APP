@@ -1,14 +1,15 @@
 export default function Footer() {
   return (
     <div className="flex flex-col items-center justify-between min-h-[300px] gap-4 bg-[#130F0D] p-10 ">
-      <div className="flex xs:flex-col lg:flex-row  xs:items-center  gap-4 lg:items-start justify-between  relative w-[80%]">
-        <div className="flex gap-2 items-center">
+      <div className="flex xs:flex-row lg:flex-row  xs:items-center  gap-4 lg:items-start justify-between  relative w-[80%]">
+        
+        <div className="flex gap-2 items-top">
           <img className="w-[50px] h-[50px] " src="logo.svg" />
           <div className="text-white text-center lg:text-left font-oswald text-[20px] font-bold  relative">
             Wyrzuta{" "}
           </div>
         </div>
-
+        <div className="flex flex-col md:flex-row gap-4 ">
         <div className="flex flex-col gap-1 shrink-0">
           <div className="text-white text-[20px] text-center lg:text-left font-bold  relative w-[104px]">
             Features{" "}
@@ -23,6 +24,7 @@ export default function Footer() {
             Analytics{" "}
           </div>
         </div>
+
         <div className="flex flex-col gap-1 shrink-0 relative">
           <div className="text-white text-[20px] text-center lg:text-left font-bold  relative w-[104px]">
             Resources{" "}
@@ -37,6 +39,8 @@ export default function Footer() {
             Analytics{" "}
           </div>
         </div>
+        
+
         <div className="flex flex-col gap-1  shrink-0 relative">
           <div className="text-white text-center text-[20px] xs:text-center lg:text-left font-bold  relative w-[104px]">
             Company{" "}
@@ -51,7 +55,8 @@ export default function Footer() {
             Analytics{" "}
           </div>
         </div>
-        <div className="flex flex-row gap-[9px] items-start justify-start shrink-0 relative">
+        </div>
+        <div className="flex flex-row gap-[9px] items-start justify-start shrink-0 relative pt-2">
           <div className="flex flex-row gap-1 items-center justify-start ">
             <img
               src="linkedin.svg"
@@ -81,6 +86,7 @@ export default function Footer() {
             />
           </div>
         </div>
+
       </div>
       <div className="flex flex-col md:flex-row justify-center xl:justify-between md:gap-8 xs:gap-2 relative">
         <div className="flex flex-row gap-4 items-center justify-center  w-[198px] relative">
