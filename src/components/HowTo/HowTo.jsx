@@ -1,35 +1,35 @@
-import './HowTo.scss'
+import "./HowTo.scss";
 
 export default function HowTo() {
-
-    return (
-        <div class="steps">
-            <h1>Wystarczą 4 proste kroki</h1>
-    
-            <div class="steps__container">
-            <div class="steps__item">
-                
-                <h3>Wybierz rzeczy</h3>
-                <p>ubrania, zabawki, sprzęt i inne</p>
-            </div>
-            <div class="steps__item">
-                
-                <h3>Spakuj je</h3>
-                <p>skorzystaj z worków na śmieci</p>
-            </div>
-            <div class="steps__item">
-                
-                <h3>Potwierdź że chcesz oddać</h3>
-                <p>wysyłamy maila z potwierdzeniem</p>
-            </div>
-            <div class="steps__item">
-                
-                <h3>Wyślij</h3>
-                <p>zamów kuriera i wyślij</p>
-            </div>
-            </div>
-
+  return (
+    <div className="p-2.5 justify-center items-center gap-2.5 flex flex-wrap bg-white">
+      <img
+        className="w-[500px] h-[500px]"
+        src="/packing.jpg"
+      />
+      <img
+        className="w-[500px] h-[500px]"
+        src="/sending.jpg"
+      />
+      <img
+        className="w-[500px] h-[500px]"
+        src="/things.jpg"
+      />
+      <div className="h-[1099px] justify-center items-center gap-2.5 flex">
+        <div className="w-[500px] h-[500px]">
+          <span className="text-black text-5xl font-normal font-['Inter'] leading-[58px]">
+            Wystarcza trzy kroki:
+            <br />
+          </span>
+          <span className="text-black text-5xl font-normal font-['Inter'] leading-[58px]">
+            Wybierz rzeczy do oddania
+            <br />
+            Spakuj
+            <br />
+            Zamów kuriera i wyślij
+          </span>
+        </div>
       </div>
-  
-    )
+    </div>
+  );
 }
