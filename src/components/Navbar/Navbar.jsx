@@ -19,12 +19,13 @@ function Navbar() {
   const username = userInfo?.username;
 
   return (
-    <div className="flex w-[1500px] h-[701px] relative bg-white ">
+    <div className="flex w-full h-[510px] relative bg-white ">
       <img
-        className="w-[1500px] h-[701px] left-[0px] top-0 absolute "
+        className="w-full left-[0px] top-0 absolute h-[510px] "
         src="Hero.png"
       />
-      <div className="w-[1202px] h-[569px] left-[120px] top-0 absolute flex-col justify-between items-center inline-flex">
+      <div className="w-full absolute top-0 left-0 flex items center ">
+      <div className="w-full flex-col justify-between items-center inline-flex">
         <div className="self-stretch justify-between items-center inline-flex">
           <Link className="p-2.5 justify-center items-center flex " to="/">
             <img className=" w-[50px] h-[50px] left-[1px] " src="logo.svg" />
@@ -117,6 +118,8 @@ function Navbar() {
           </Link>
         </div>
       </div>
+      </div>
+
     </div>
   );
 }
