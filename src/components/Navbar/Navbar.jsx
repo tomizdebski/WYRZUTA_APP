@@ -27,13 +27,13 @@ function Navbar() {
       <div className="w-full absolute top-0 left-0 flex items center ">
       <div className="w-full flex-col justify-between items-center inline-flex">
         <div className="self-stretch justify-between items-center inline-flex">
-          <Link className="p-2.5 justify-center items-center flex " to="/">
+          <Link className="p-2.5 justify-center items-center flex " to="/" >
             <img className=" w-[50px] h-[50px] left-[1px] " src="logo.svg" />
             <div className="text-stone-50 text-4xl font-bold font-oswald">
               Wyrzuta
             </div>
           </Link>
-          <div className="justify-start items-center gap-[33px] flex">
+          <div className="hidden justify-start items-center gap-[33px] lg:flex">
             <Link
               className="text-white text-xl font-extrabold font-oswald"
               to="/"
@@ -97,18 +97,18 @@ function Navbar() {
         </div>
         <div className="self-stretch h-[376px] flex-col justify-between items-center flex">
           <div className="w-[1198px] h-[266px] text-center">
-            <span className="text-white text-[80px] font-bold font-oswald uppercase leading-[112px]">
+            <span className="text-white text-[50px] lg:text-[80px] font-bold font-oswald uppercase leading-[112px]">
               nie wyrzucaj{" "}
             </span>
-            <span className="text-green-400 text-[80px] font-bold font-oswald uppercase leading-[112px] ">
+            <span className="text-green-400 text-[50px] lg:text-[80px] font-bold font-oswald uppercase leading-[112px] ">
               oddaj
             </span>
-            <span className="text-white text-[80px] font-bold font-oswald uppercase leading-[112px] ">
+            <span className="text-white text-[50px] lg:text-[80px] font-bold font-oswald uppercase leading-[112px] ">
               {" "}
               <br />
             </span>
 
-            <span className="text-green-400 text-[80px] font-bold font-oswald uppercase leading-[112px] ">
+            <span className="text-green-400 text-[50px] lg:text-[80px] font-bold font-oswald uppercase leading-[112px] ">
               {" "}
               niechciane rzeczy{" "}
             </span>
