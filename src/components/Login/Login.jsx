@@ -27,7 +27,7 @@ export default function Login() {
   }
 
   return (
-    <div className="flex align-super bg-[#130F0D]">
+    <div className="flex  bg-[#130F0D]">
       <div className="login ">
         <h1 className="text-xl font-bold font-oswald text-white">Login</h1>
         <Formik
