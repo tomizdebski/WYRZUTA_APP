@@ -26,7 +26,7 @@ export default function Post({_id,title,summary,cover,content,createdAt,author,r
   }
 
   return (
-    <div className="post">
+    <div className="post hover:opacity-40">
       <div className="image">
         <Link to={`/post/${_id}`}>
           <img src={env.URL_API + '/'+cover} alt=""/>
