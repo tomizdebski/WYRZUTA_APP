@@ -86,7 +86,7 @@ function Navbar() {
             )}
 
             {!username && (
-              <Link className="sm:flex mx-2 py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald border border-green-400 hover:bg-green-400 hover:opacity-60 hover:text-black hidden" to="/login">
+              <Link className="sm:flex mx-2 py-[12px] px-[24px] justify-center items-center gap-2  text-white text-xl font-bold font-oswald border border-green-400 hover:bg-green-400 hover:opacity-60 hover:text-black hidden" to="/login">
                 Login
               </Link>
             )}
