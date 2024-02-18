@@ -26,7 +26,7 @@ export default function IndexPage() {
         
         
      
-      <div className="container-post bg-white py-20 h-min-[600px]">
+      <div className="container-post bg-white py-20 ">
          {posts.length > 0 && posts.map(post => (
         !post.buyer && <Post key={post._id} {...post} />
         ))}

@@ -5,5 +5,32 @@
 @tailwind utilities;
 
 
+.hamburger {
+    cursor: pointer;
+  }
+  
+  .line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: white;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .open:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  
+  .open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  
+
+
 
 

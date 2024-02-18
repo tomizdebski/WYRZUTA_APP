@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 //import './Navbar.scss'
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../UserContext";
+import Hamburger from "../Hamburger";
 
 function Navbar() {
   const { setUserInfo, userInfo } = useContext(UserContext);
@@ -85,15 +86,16 @@ function Navbar() {
             )}
 
             {!username && (
-              <Link className="mx-2 py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald border border-green-400 hover:bg-green-400 hover:opacity-60 hover:text-black " to="/login">
+              <Link className="sm:flex mx-2 py-[12px] px-[24px] justify-center items-center gap-2 flex text-white text-xl font-bold font-oswald border border-green-400 hover:bg-green-400 hover:opacity-60 hover:text-black hidden" to="/login">
                 Login
               </Link>
             )}
             {!username && (
-              <Link className="py-[12px] px-[24px] bg-green-400 border border-green-400 justify-center items-center gap-2 flex hover:opacity-60 text-white text-xl font-bold font-oswald hover:text-black" to="/register">
+              <Link className="sm:flex py-[12px] px-[24px] bg-green-400 border border-green-400 justify-center items-center gap-2  hover:opacity-60 text-white text-xl font-bold font-oswald hover:text-black hidden" to="/register">
                 Register
               </Link>
             )}
+            <Hamburger />
           </div>
         </div>
         <div className=" h-[376px] flex-col justify-end gap-3 items-left flex">
